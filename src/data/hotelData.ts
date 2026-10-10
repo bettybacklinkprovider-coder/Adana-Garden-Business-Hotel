@@ -1,5 +1,18 @@
 import { Room, AmenityHighlight, AdanaAttraction } from '../types';
 
+// Direct asset imports so Vite properly processes, optimizes, and bundles images for production (Vercel, Netlify, etc.)
+import exteriorImg from '../assets/images/hotel_exterior_dusk_1791626445124.jpg';
+import lobbyImg from '../assets/images/hotel_lobby_lounge_1791626458862.jpg';
+import deluxeBedroomImg from '../assets/images/deluxe_bedroom_1791626474826.jpg';
+import executiveSuiteImg from '../assets/images/executive_suite_1791626487388.jpg';
+import adanaCityImg from '../assets/images/adana_seyhan_view_1791626499977.jpg';
+import amenityBedImg from '../assets/images/amenity_comfortable_bed_1791630267340.jpg';
+import amenityDeskImg from '../assets/images/amenity_business_desk_1791630278211.jpg';
+import amenityLocationImg from '../assets/images/amenity_adana_location_1791630290408.jpg';
+import amenityFrontDeskImg from '../assets/images/amenity_front_desk_1791630300966.jpg';
+import amenityBreakfastImg from '../assets/images/amenity_dining_breakfast_1791630311725.jpg';
+import amenityParkingImg from '../assets/images/amenity_hotel_parking_1791630323250.jpg';
+
 export const HOTEL_INFO = {
   name: 'Adana Garden Business Hotel',
   tagline: 'Experience Comfort. Discover Adana.',
@@ -16,17 +29,17 @@ export const HOTEL_INFO = {
   mapsUrl:
     'https://www.google.com/maps/search/?api=1&query=Re%C5%9Fatbey%2C+62013.+Sk.+No%3A35%2C+01300+Seyhan%2FAdana%2C+T%C3%BCrkiye',
   images: {
-    exterior: '/src/assets/images/hotel_exterior_dusk_1791626445124.jpg',
-    lobby: '/src/assets/images/hotel_lobby_lounge_1791626458862.jpg',
-    bedroom: '/src/assets/images/deluxe_bedroom_1791626474826.jpg',
-    suite: '/src/assets/images/executive_suite_1791626487388.jpg',
-    city: '/src/assets/images/adana_seyhan_view_1791626499977.jpg',
-    amenityBed: '/src/assets/images/amenity_comfortable_bed_1791630267340.jpg',
-    amenityDesk: '/src/assets/images/amenity_business_desk_1791630278211.jpg',
-    amenityLocation: '/src/assets/images/amenity_adana_location_1791630290408.jpg',
-    amenityFrontDesk: '/src/assets/images/amenity_front_desk_1791630300966.jpg',
-    amenityBreakfast: '/src/assets/images/amenity_dining_breakfast_1791630311725.jpg',
-    amenityParking: '/src/assets/images/amenity_hotel_parking_1791630323250.jpg',
+    exterior: exteriorImg,
+    lobby: lobbyImg,
+    bedroom: deluxeBedroomImg,
+    suite: executiveSuiteImg,
+    city: adanaCityImg,
+    amenityBed: amenityBedImg,
+    amenityDesk: amenityDeskImg,
+    amenityLocation: amenityLocationImg,
+    amenityFrontDesk: amenityFrontDeskImg,
+    amenityBreakfast: amenityBreakfastImg,
+    amenityParking: amenityParkingImg,
   },
 };
 
@@ -44,7 +57,7 @@ export const ROOMS_DATA: Room[] = [
     size: '26 m² / 280 sq ft',
     pricePlaceholder: '€75 – €95',
     priceNote: 'Estimated seasonal rates · Subject to direct confirmation',
-    image: '/src/assets/images/deluxe_bedroom_1791626474826.jpg',
+    image: deluxeBedroomImg,
     amenities: [
       'High-Speed Fiber Wi-Fi',
       'Ergonomic Work Desk',
@@ -71,7 +84,7 @@ export const ROOMS_DATA: Room[] = [
     size: '34 m² / 365 sq ft',
     pricePlaceholder: '€95 – €120',
     priceNote: 'Estimated seasonal rates · Subject to direct confirmation',
-    image: '/src/assets/images/deluxe_bedroom_1791626474826.jpg',
+    image: deluxeBedroomImg,
     amenities: [
       'Fiber Wi-Fi (200 Mbps)',
       'Executive Desk with USB-C Hub',
@@ -98,7 +111,7 @@ export const ROOMS_DATA: Room[] = [
     size: '42 m² / 450 sq ft',
     pricePlaceholder: '€125 – €155',
     priceNote: 'Estimated seasonal rates · Subject to direct confirmation',
-    image: '/src/assets/images/executive_suite_1791626487388.jpg',
+    image: executiveSuiteImg,
     amenities: [
       'High-Speed Fiber Wi-Fi',
       'Dedicated Lounge Corner',
@@ -125,7 +138,7 @@ export const ROOMS_DATA: Room[] = [
     size: '58 m² / 625 sq ft',
     pricePlaceholder: '€175 – €220',
     priceNote: 'Estimated seasonal rates · Subject to direct confirmation',
-    image: '/src/assets/images/executive_suite_1791626487388.jpg',
+    image: executiveSuiteImg,
     amenities: [
       'Separate Living & Meeting Salon',
       'Executive Boardroom Table',
@@ -148,7 +161,7 @@ export const HOTEL_AMENITIES: AmenityHighlight[] = [
       'Orthopedic mattresses, hypoallergenic pillows, blackout drapery, and acoustic insulation ensuring uninterrupted slumber throughout your trip.',
     category: 'Rooms & Rest',
     verified: true,
-    image: '/src/assets/images/amenity_comfortable_bed_1791630267340.jpg',
+    image: amenityBedImg,
     tag: 'Rest & Comfort',
     featureNote: 'Acoustically Insulated',
     highlight: 'Orthopedic Mattress',
@@ -159,7 +172,7 @@ export const HOTEL_AMENITIES: AmenityHighlight[] = [
       'Dedicated workstations, ergonomic desk seating, accessible multi-plug hubs, and quiet executive corners for productive workflow.',
     category: 'Business Services',
     verified: true,
-    image: '/src/assets/images/amenity_business_desk_1791630278211.jpg',
+    image: amenityDeskImg,
     tag: 'Productivity',
     featureNote: 'Fiber Wi-Fi & USB-C',
     highlight: 'Ergonomic Desk',
@@ -170,7 +183,7 @@ export const HOTEL_AMENITIES: AmenityHighlight[] = [
       'Prime placement on Reşatbey 62013 Sk., moments away from Seyhan financial centers, prestigious boutiques, and rapid transit connections.',
     category: 'Location',
     verified: true,
-    image: '/src/assets/images/amenity_adana_location_1791630290408.jpg',
+    image: amenityLocationImg,
     tag: 'Seyhan District',
     featureNote: 'Reşatbey 62013 Sk.',
     highlight: 'Prime Position',
@@ -181,7 +194,7 @@ export const HOTEL_AMENITIES: AmenityHighlight[] = [
       'Always-on front desk personnel for late check-in coordination, taxi requests, luggage storage, and regional destination recommendations.',
     category: 'Hospitality',
     verified: true,
-    image: '/src/assets/images/amenity_front_desk_1791630300966.jpg',
+    image: amenityFrontDeskImg,
     tag: 'Front Desk',
     featureNote: 'Round-the-Clock Team',
     highlight: '24/7 Concierge',
@@ -192,7 +205,7 @@ export const HOTEL_AMENITIES: AmenityHighlight[] = [
       'Enjoy rich Turkish breakfast assortments with traditional cheeses, olives, fresh bread, and hot tea or freshly roasted espresso.',
     category: 'Culinary',
     verified: true,
-    image: '/src/assets/images/amenity_dining_breakfast_1791630311725.jpg',
+    image: amenityBreakfastImg,
     tag: 'Turkish Breakfast',
     featureNote: 'Artisan Assortment',
     highlight: 'Served Daily',
@@ -203,7 +216,7 @@ export const HOTEL_AMENITIES: AmenityHighlight[] = [
       'High-bandwidth wireless internet access covered throughout all guest rooms and public lounges, paired with parking assistance.',
     category: 'Facilities',
     verified: true,
-    image: '/src/assets/images/amenity_hotel_parking_1791630323250.jpg',
+    image: amenityParkingImg,
     tag: 'Connectivity & Parking',
     featureNote: 'Secure Guest Area',
     highlight: 'Complimentary Access',
