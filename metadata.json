@@ -1,0 +1,6 @@
+{
+  "name": "Adana Garden Business Hotel",
+  "description": "Premium luxury business hotel website for Adana Garden Business Hotel in Adana, Türkiye.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
